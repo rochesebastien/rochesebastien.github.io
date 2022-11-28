@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<!-- Portfolio de Sébastien Roche -->
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta itemprop="02/05/2022"/>
+  <meta name="description" content="Portfolio de Roche Sébastien, etudiant en developpement web" />
+  <title>Roche Sébastien ─ Portfolio</title>
+  <link rel="stylesheet" href="css/main/font.css" />
+  <link rel="stylesheet" href="css/main/resp_mobile.css" />
+  <link rel="stylesheet" href="css/main/main.css" />
+  <link rel="stylesheet" href="css/main/resp_tab.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+  <script src="js/libraries/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://threejs.org/build/three.min.js"></script>
+  <script src="js/libraries/OrbitControls.js"></script>
+  <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+
+<body>
+  <!-- <canvas id="tg"></canvas> -->
+  <div class="loader">
+    <h1 class="loader_title" >Loading</h1>
+  </div>
+  <!-- <div id="setting_container">
+    <div class="setting_icon_ctn setting_hide">
+      <img id="GoTop" class="icons hide" src="./img/icon/arrow_top.svg" title="Aller en haut" alt="Top">
+      <img id="switch_mode" class="icons settins_icons" src="./img/icon/sun.svg" alt="Jour/nuit" title="Mode nuit/jour">
+    </div> 
+    <img id="setting_icon" class="icons" src="./img/icon/settings.svg" alt="Paramètres"> 
+    </div>
+  </div> -->
+
+  <nav class="navbar">
+    <a class="big_logo_nav" href="">
+      <img src="img/logo/nav_logo.png" alt="Roche Sébastien" />
+    </a>
+
+    <button class="nav-btn">
+      <span class="nav-icon"></span>
+      <span class="nav-icon2"></span>
+      <span class="nav-icon3"></span>
+    </button>
+
+    <div class="nav-bg ">
+      <ul class="nav-list">
+        <li><a href="" class="clickable nav-link">Accueil</a></li>
+        <li><a href="#skill" class="clickable nav-link">Compétences</a></li>
+        <li><a href="#creation" class="nav-link">Projets</a></li>
+        <li><a href="#formation" class="nav-link">Formations</a></li>
+        <li><a href="#about" class="clickable nav-link">A propos</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+
+  </nav>
+  
+  <dialog id="dialog_window">
+    <img id="dialog_close" class="icons" src="/img/icon/left-arrow.svg" alt="Retour">
+    <div id="dialog_window_ctn">
+
+    </div>
+  </dialog>
+
+  <!-- Section page d'accueil -->
+  <section id="home">
+    <ul class="home_list_left">
+      <li class="home_list_item">WEB</li>
+      <li class="home_list_item">WEB</li>
+      <li class="home_list_item">WEB</li>
+      <li class="home_list_item">WEB</li>
+      <li class="home_list_item">WEB</li>
+      <li class="home_list_item">WEB</li>
+    </ul>
+      <h1 class="home_title home_title_one">DÉVELOPPEUR
+        <span>WEB .</span>
+      </h1>
+      <h1 class="home_title home_title_scd">ROCHE 
+        <span>SÉBASTIEN</span>
+      </h1>
+      <ul class="home_list_right">
+        <li class="home_list_item">SEB</li>
+        <li class="home_list_item">SEB</li>
+        <li class="home_list_item">SEB</li>
+        <li class="home_list_item">SEB</li>
+      </ul>
+      <img id="home_arrow" src="./img/icon/arrow.svg" alt="" srcset="">
+  </section>
+
+  <!-- Section A propos -->
+
+<div id="about" class="big_title_section_right" data-aos="fade-right">
+  <div class="big_title_right">
+    <div class="big_title_part1">
+      <span class="num_left">01</span>
+      <span class="outlinenum num_left">01</span>
+    </div>
+
+    <div class="big_title_part2">
+      <span class="row outlineText">
+        <span class="urow">A propos</span>
+      </span>
+      <span class="row">
+        <span class="urow">A propos</span>
+      </span>
+      <span class="row outlineText">
+        <span class="urow">A propos</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+    <section id="about_container">
+      <div class="about_desc">
+        <div class="about_desc_one">
+          <img src="./img/photo/me.png" alt="" data-aos="fade-up">
+          <a href="./assets/files/CV_2022.pdf" class="cv_link btn" target="_blank">Curriculum vitæ</a>
+        </div>
+        <div class="about_desc_two">
+          <p data-aos="fade-up">Je m’appelle Sébastien, j’ai 19 ans et je suis en bachelor logiciel et web. M’intéressant aux nouvelles technologies depuis petit, je suis en possession d’un BTS SIO et je souhaite devenir développeur web frontend / full-stack.</p>
+        </div>
+        
+        
+      </div>
+    </section>
+    
+      
+
+  <!-- Section Formation -->
+  <div id="formation" class="big_title_section_left" data-aos="fade-left">
+    <div class="big_title_left">
+
+      <div class="big_title_part1">
+        <span class="row outlineText">
+          <span class="urow">Parcours</span>
+        </span>
+        <span class="row">
+          <span class="urow">Parcours</span>
+        </span>
+        <span class="row outlineText">
+          <span class="urow">Parcours</span>
+        </span>
+      </div>
+
+      <div class="big_title_part2">
+        <span class="num_right">02</span>
+        <span class="outlinenum num_right">02</span>
+      </div>
+  </div>
+</div>
+
+  <section id="formation_section">
+    <div class="formation_container">
+      <div class="left">
+        <img class="icons" src="./img/icon/diplome.svg" data-aos="fade-up">
+        <img class="icons" src="./img/icon/dev_web.svg" data-aos="fade-up">
+        <img class="icons" src="./img/icon/student.svg" data-aos="fade-up">
+      </div>
+      <div class="formation_line_ctn">
+        <div class="formation_line"></div>
+      </div>
+     <div class="right">
+       <div class="item" data-aos="fade-up">
+        <h1>BACCALAURÉAT SCIENTIFIQUE</h1>
+        <h2>2017-2020</h2>
+        <p> Science de l'ingénieur, option ISN</p>
+       </div>
+       <div class="item" data-aos="fade-up">
+        <h1>BTS SIO</h1>
+        <h2>2020-2022</h2>
+        <p>option développement (SLAM). <a onclick="ToggleBtsDialog()">En savoir plus ➜</a></p>
+        
+       </div>
+       <div class="item" data-aos="fade-up">
+        <h1>BACHELOR</h1>
+        <h2>2022-???</h2>
+        <p><a href="https://www.3il-ingenieurs.fr/nos-bachelors/bachelor-developpement-logiciel-et-web/" target="_blank">Developpement Logiciel et Web</a> de 3il à Limoges
+       </div>
+     </div>
+     
+    </div>
+  </section>
+
+
+  <!-- Section Mes aptitudes/Compétences -->
+  <div id="skill" class="big_title_section_right" data-aos="fade-right">
+    <div class="big_title_right">
+      <div class="big_title_part1">
+        <span class="num_left">03</span>
+        <span class="outlinenum num_left">03</span>
+      </div>
+
+      <div class="big_title_part2">
+        <span class="row outlineText">
+          <span class="urow">Compétences</span>
+        </span>
+        <span class="row">
+          <span class="urow">Compétences</span>
+        </span>
+        <span class="row outlineText">
+          <span class="urow">Compétences</span>
+        </span>
+      </div>
+    </div>
+  </div>
+  
+
+  <section id="skill_section">
+    <div class="skill_container">
+      <div class="skill_item">
+        <h1 class="skill_title"  data-aos="fade-right">DEVELOPPEMENT WEB</h1>
+        <img class="img_skill_bg" src="./img/background/skill_dev.jpg">
+        <div class="skill_line_icon">
+          <img class="icons" src="./img/icon/html.svg" alt="HTML">         
+          <img class="icons" src="./img/icon/css.svg" alt="CSS">
+          <img class="icons" src="./img/icon/js.svg" alt="Javascript">
+          <img class="icons" src="./img/icon/php.svg" alt="PHP">
+          <img class="icons" src="./img/icon/sql.svg" alt="SQL/SQLITE">
+          <img class="icons" src="./img/icon/jquery.svg" alt="Jquery">
+          <img class="icons" src="./img/icon/bootstrap.svg" alt="Bootstrap">
+          <img class="icons" src="./img/icon/symfony.svg" alt="Symfony">
+          <img class="icons" src="./img/icon/angular.svg" alt="Angular">
+          </div>
+      </div>
+      <div class="skill_item skill_item-mid">
+        <h1 class="skill_title skill_title_mid"  data-aos="fade-right">LOGICIELS</h1>
+        <img class="img_skill_bg" src="./img/background/skill_software.jpg">
+        <div class="skill_line_icon">
+          <img class="icons" src="./img/icon/word.svg" alt="Word">        
+          <img class="icons" src="./img/icon/photoshop.svg" alt="Photoshop">
+          <img class="icons" src="./img/icon/figma.svg" alt="Figma">
+          <img class="icons" src="./img/icon/notion.svg" alt="Notion">
+          <img class="icons" src="./img/icon/vscode.svg" alt="VScode">
+          <img class="icons" src="./img/icon/git.svg" alt="Git">
+          <img class="icons" src="./img/icon/postman.svg" alt="Postman">
+          </div>
+      </div>
+      <div class="skill_item">
+      <h1 class="skill_title"  data-aos="fade-right">AUTRES</h1>
+      <img class="img_skill_bg" src="./img/background/skill_others.jpg" alt="">
+      <div class="skill_line_icon">
+        <img class="icons" src="./img/icon/Java.svg" alt="Java">         
+        <img class="icons" src="./img/icon/uml.svg" alt="Merise">
+        <img class="icons" src="./img/icon/android.svg" alt="Android" >
+        <img class="icons" src="./img/icon/uml.svg" alt="UML" >
+        </div>
+      </div>
+  </div>
+  </section>
+
+
+  <!-- Section  Mes Creation -->
+  <div id="creation" class="big_title_section_left">
+    <div class="big_title_left">
+
+      <div class="big_title_part1">
+        <span class="row outlineText">
+          <span class="urow">Creations</span>
+        </span>
+        <span class="row">
+          <span class="urow">Creations</span>
+        </span>
+        <span class="row outlineText">
+          <span class="urow">Creations</span>
+        </span>
+      </div>
+
+      <div class="big_title_part2">
+        <span class="num_right">04</span>
+        <span class="outlinenum num_right">04</span>
+      </div>
+  </div>
+</div>
+
+  <div class="project-filter-ctn">
+    <span>Filtres : </span>
+    <span onclick="filter('')" data-aos="fade-right">tous</span>
+    <span onclick="filter('php')" data-aos="fade-right">php</span>
+    <span onclick="filter('angular')" data-aos="fade-right">angular</span>
+    <span onclick="filter('symfony')" data-aos="fade-right">symfony</span>
+    <span onclick="filter('js')" data-aos="fade-right">javascript</span>
+    <span onclick="filter('autres')" data-aos="fade-right">autres</span>
+</div>
+
+<div class="project-grid-ctn" data-aos="zoom-in">
+
+    <div class="project-item" data-tilt data-type="php js">
+            <div class="project_context-ctn">
+                <span>Projet de Stage 2 - 2022</span>
+                <img src="./img/icon/calendrier.svg">
+            </div>
+            <div class="project-stack-used-ctn">
+              <img src="./img/icon/html.svg" alt="HTML" title="HTML">
+              <img src="./img/icon/css.svg" alt="CSS" title="CSS">
+              <img src="./img/icon/php.svg" alt="PHP" title="PHP">
+              <img src="./img/icon/js.svg" alt="PHP" title="JS">
+              <img src="./img/icon/jquery.svg" alt="Jquery" title="Jquery">
+              <img src="./img/icon/sql.svg" alt="SQlite" title="Sqlite">             
+            </div>
+            <span class="project_context-title">Stock DDSP23</span>
+            <div class="minia-bg-hover"></div>
+            <img class="minia" src="./img/photo/projet2.jpg">  
+    </div>
+    <div class="project-item" data-tilt data-type="php js">
+      <div class="project_context-ctn">
+          <span>Projet de Stage 1 - 2021</span>
+          <img src="./img/icon/calendrier.svg">
+      </div>
+      <div class="project-stack-used-ctn">
+        <img src="./img/icon/html.svg" alt="HTML" title="HTML">
+        <img src="./img/icon/css.svg" alt="CSS" title="CSS">
+        <img src="./img/icon/php.svg" alt="PHP" title="PHP">
+        <img src="./img/icon/js.svg" alt="PHP" title="JS">
+        <img src="./img/icon/jquery.svg" alt="Jquery" title="Jquery">
+        <img src="./img/icon/sql.svg" alt="SQlite" title="Sqlite">             
+      </div>
+      <span class="project_context-title">Intranet DDSP23</span>
+      <div class="minia-bg-hover"></div>
+      <img class="minia" src="./img/photo/projet1.jpg">  
+  </div>
+
+  <div class="project-item" data-tilt data-type="symfony php">
+    <div class="project_context-ctn">
+        <span>Projet Scolaire - 2022</span>
+        <img src="./img/icon/calendrier.svg">
+    </div>
+    <div class="project-stack-used-ctn">
+      <img src="./img/icon/html.svg" alt="HTML" title="HTML">
+      <img src="./img/icon/css.svg" alt="CSS" title="CSS">
+      <img src="./img/icon/php.svg" alt="PHP" title="PHP">
+      <img src="./img/icon/symfony.svg" alt="PHP" title="PHP">
+      <img src="./img/icon/bootstrap.svg" alt="Bootstrap" title="Bootstrap">            
+    </div>
+    <span class="project_context-title">Petit Jardinier</span>
+    <div class="minia-bg-hover"></div>
+    <img class="minia" src="./img/photo/projet6.jpg">  
+</div>
+
+<div class="project-item" data-tilt data-type="angular">
+  <div class="project_context-ctn">
+      <span>Projet Scolaire - 2022</span>
+      <img src="./img/icon/calendrier.svg">
+  </div>
+  <div class="project-stack-used-ctn">
+    <img src="./img/icon/html.svg" alt="HTML" title="HTML">
+    <img src="./img/icon/css.svg" alt="CSS" title="CSS">
+    <img src="./img/icon/angular.svg" alt="PHP" title="Angular">
+    <img src="./img/icon/php.svg" alt="PHP" title="PHP">           
+  </div>
+  <span class="project_context-title">Angular Medecin</span>
+  <div class="minia-bg-hover"></div>
+  <img class="minia" src="./img/photo/projet5.jpg">  
+</div>
+
+<div class="project-item" data-tilt data-type="autres">
+  <div class="project_context-ctn">
+      <span>Projet Scolaire - 2022</span>
+      <img src="./img/icon/calendrier.svg" alt="">
+  </div>
+  <div class="project-stack-used-ctn">
+    <img src="./img/icon/Java.svg" alt="Java" title="Java">
+    <img src="./img/icon/android.svg" alt="Android Studio" title="Android Studio">
+    <img src="./img/icon/sql.svg" alt="SQlite" title="Sqlite">          
+  </div>
+  <span class="project_context-title">PorteOuverte Android</span>
+  <div class="minia-bg-hover"></div>
+  <img class="minia" src="./img/photo/projet7.jpg">  
+</div>
+
+<div class="project-item" data-tilt data-type="php js">
+  <div class="project_context-ctn">
+      <span>Projet Scolaire - 2022</span>
+      <img src="./img/icon/calendrier.svg" alt="">
+  </div>
+  <div class="project-stack-used-ctn">
+    <img src="./img/icon/html.svg" alt="HTML" title="HTML">
+    <img src="./img/icon/css.svg" alt="CSS" title="CSS">
+    <img src="./img/icon/php.svg" alt="PHP" title="PHP">
+    <img src="./img/icon/js.svg" alt="Javascript" title="Javascript">
+    <img src="./img/icon/jquery.svg" alt="Jquery" title="Jquery">           
+  </div>
+  <span class="project_context-title">Anabase hotellerie</span>
+  <div class="minia-bg-hover"></div>
+  <img class="minia" src="./img/photo/projet4.jpg">  
+</div>
+
+<div class="project-item" data-tilt data-type="php">
+  <div class="project_context-ctn">
+      <span>Projet Scolaire - 2021</span>
+      <img src="./img/icon/calendrier.svg" alt="">
+  </div>
+  <div class="project-stack-used-ctn">
+    <img src="./img/icon/html.svg" alt="HTML" title="HTML">
+      <img src="./img/icon/css.svg" alt="CSS" title="CSS">
+      <img src="./img/icon/php.svg" alt="PHP" title="PHP">         
+  </div>
+  <span class="project_context-title">Ligue de baskets</span>
+  <div class="minia-bg-hover"></div>
+  <img class="minia" src="./img/photo/projet3.jpg">  
+</div>
+
+
+</div>
+
+  <!-- Section Contact -->
+  <div id="contact" class="big_title_section_left" data-aos="fade-left">
+    <div class="big_title_left">
+
+      <div class="big_title_part1">
+        <span class="row outlineText">
+          <span class="urow">Contact</span>
+        </span>
+        <span class="row">
+          <span class="urow">Contact</span>
+        </span>
+        <span class="row outlineText">
+          <span class="urow">Contact</span>
+        </span>
+      </div>
+
+      <div class="big_title_part2">
+        <span class="num_right">06</span>
+        <span class="outlinenum num_right">06</span>
+      </div>
+  </div>
+</div>
+
+  <div class="contact_container pop_down">
+    <h1>Pour toute question ? Me contactez ici :</h1>
+      <ul class="contact_info">    
+        <li><img class="icons" src="./img/icon/location.svg">Limoges / Guéret</li>
+        <li><img class="icons" src="./img/icon/tel.svg">08 00 00 00 00</li>
+        <li><img class="icons" src="./img/icon/mail.svg"><p>sebastienroche230@gmail.com</p></li>
+      </ul>
+   <ul class="contact_list">
+    <li>
+      <img class="icons" src="./img/icon/linkedin.svg">
+      <a target="_blank" href="https://www.linkedin.com/in/sebasti1roche/">LinkedIn </a>
+      <img class="contact_arrows" src="./img/icon/arrow.svg" alt="🠗">
+    </li>
+    <li>
+      <img class="icons" src="./img/icon/github.svg">
+      <a target="_blank" href="https://github.com/rochesebastien">Github </a>
+      <img class="contact_arrows" src="./img/icon/arrow.svg" alt="🠗">
+    </li>
+    <li>
+      <img class="icons" src="./img/icon/codepen.svg">
+      <a target="_blank" href="https://codepen.io/SebNet">Codepen </a>
+      <img class="contact_arrows" src="./img/icon/arrow.svg" alt="🠗">
+    </li>
+   </ul>
+  </div>
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer_row">
+      <a class="footer_item">&copy; 2022 Tout droits réservés</a>
+      <a class="footer_item" href="./mentions_legales.html">
+        Mentions légales
+      </a>
+      <a class="footer_item footer_top">Haut de page &mapstoup;
+      </a>
+      
+    </div>
+  </footer>
+</body>
+<script src="js/three_bg.js"></script>
+<script src="js/main.js"></script>
+<script src="./js/libraries/tilt.js"></script>
+<script src="js/cookie.js"></script>
+</html>

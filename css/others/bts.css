@@ -1,0 +1,114 @@
+.bts_presentation_ctn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bts_presentation_ctn h1{
+    font-size: var(--big_title_size);
+    color: transparent;
+    -webkit-text-stroke: 2px var(--second_color, white);
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+}
+
+.bts_presentation_ctn h2{
+    font-size: calc(50 * (0.01 * 10vmin));
+    -webkit-text-stroke: 2px var(--second_color, white);
+    color: var(--second_color, white);
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 1.5rem;
+}
+
+.bts_presentation_ctn article {
+    width: 75%;
+}
+
+.bts_presentation_ctn article p{
+    font-family: "Dela Gothic One", cursive, sans-serif;
+    letter-spacing: 0.1vw;
+    color: var(--second_color, white);
+    margin: 15px;
+    animation: translateRightOnLoad 1s;
+    text-align: center;
+}
+
+.option_bts{
+    width: 85%;
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.option_bts_type{
+    border-top: 2px solid var(--second_color, white);
+    border-bottom: 2px solid var(--second_color, white);
+    width: 50%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 2em;
+    animation: PopOnLoad 1s;
+}
+
+
+.option_bts_type h3{
+    font-size: calc(40 * (0.01 * 10vmin));
+    -webkit-text-stroke: 2px var(--second_color, white);
+    color: var(--second_color, white);
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 0.5em;
+}
+
+.option_bts_type p{
+    font-family: "Dela Gothic One", cursive, sans-serif;
+    letter-spacing: 0.1vw;
+    color: var(--second_color, white);
+    text-align:start;
+}
+
+.bts_presentation_ctn ul {
+    width: 50%;
+}
+
+.bts_presentation_ctn ul li{
+    width: 100%;
+    font-family: "Dela Gothic One", cursive, sans-serif;
+    color: var(--second_color, white);
+    list-style:disc;
+}
+
+.bts_presentation_ctn ul .first_li{
+    width: 100%;
+    background-color:var(--second_color, white); 
+    color:var(--main_color,black);
+    margin: 1rem 0px;
+}
+
+
+@media screen and (max-width: 699px) {
+
+    .bts_presentation_ctn article {
+        width: 100%;
+    }
+
+    .option_bts{
+        width: 90%;
+    }
+
+    .option_bts_type{
+        width: 90%;
+        margin: none;
+        margin-bottom: 2rem;
+    }
+
+    .bts_presentation_ctn ul{
+        width: 85%;
+    }
+}

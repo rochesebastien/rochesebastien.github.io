@@ -1,0 +1,135 @@
+.project_presentation_ctn{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project_title_number{
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--second_color, white);
+    font-size: calc(0.8 * var(--title_size));
+    display: flex;
+    justify-content: flex-end;
+    width: 98%;
+    margin-right: 2%;
+}
+
+.project_title_stack{
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 90%;
+    display: flex;
+    justify-content: flex-end;
+    width: 98%;
+    margin-right: 2%;
+    text-transform: uppercase;
+    color: var(--second_color, white);
+}
+
+.project_title_date{
+    font-family: "Anton",sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 98%;
+    margin-right: 2%;
+    text-transform: uppercase;
+    color: var(--second_color, white);
+}
+
+.project_section_desc{
+    width:75%;
+    font-family: "Dela Gothic One", cursive, sans-serif;
+    letter-spacing: 0.1vw;
+    font-size: var(--text_size);
+    color: var(--second_color, white);
+    margin: 15px;
+    animation: translateRightOnLoad 1s;
+    
+}
+
+.project_section_desc p {
+    width: 100%;
+    text-align:left;
+}
+
+.project_section_img{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project_section_img img{
+    margin: 1rem;
+    width: 45%;
+}
+
+.icons_project_contain{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    margin: auto 0px;
+    padding-bottom: 2em;
+}
+
+.icons_project_contain i{
+cursor: pointer;
+color: var(--second_color, white);
+font-size: 50px;
+margin: 3px;
+}
+
+.icons_project_contain i:hover {
+color: var(--scd_color, #f1f1f17a);
+}
+
+
+.icons_project_contain button{
+    margin: auto 0.5em!important;
+}
+
+@media screen and (max-width: 699px) {
+   
+
+    .project_section_desc{
+        width: 85%;
+    }
+
+    .project_title_number{
+        width: 100%;
+       justify-content: center;
+       margin-right: 0;
+       text-align: center;
+    }
+
+.project_section_img img{
+    margin: 1rem;
+    width: 90%;
+} 
+
+.project_title_stack{
+    width: 100%;
+    margin-right: 0;
+    white-space: pre-line;
+    text-align: center;
+    justify-content: center;
+}
+
+.project_title_date{
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+}

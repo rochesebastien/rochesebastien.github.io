@@ -1,0 +1,21 @@
+
+/* Pour les gros titres de §*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+/* Pour les numéros*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+
+/* Pour les petits textes importants */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* Pour le texte test */
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+
+
+/* Pour le texte */
+@font-face {
+    font-family: "Main";
+    src: url(../../font/mainfont1.otf);
+}
+

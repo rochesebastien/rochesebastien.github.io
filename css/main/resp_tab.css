@@ -1,0 +1,136 @@
+
+/* Pour ipad en position portrait */
+/* @media screen and (min-width: 1366px), 
+      screen and (max-width: 1400px), 
+      screen and (min-height: 1054px),
+      screen and (max-height: 1060px) {
+  .home_right h1{
+    color:red;
+  }
+} */
+
+
+
+
+
+@media screen and (max-width: 1140px) {
+ 
+.big_title_left .big_title_part1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  }
+  
+  .big_title_left .big_title_part2 {
+    width: 0%;
+  }  
+  
+  
+.big_title_right .big_title_part1 {
+  width: 0%;
+}
+
+.big_title_right .big_title_part2 {
+  width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.big_title_right span .urow {
+  float: none;
+}
+
+.big_title_left span .urow {
+  float: none;
+}
+
+.num_right{
+  display: none;
+  visibility: hidden;
+}
+
+.num_left{
+display: none;
+visibility: hidden;
+}
+
+}
+
+
+@media screen and (max-width: 1124px) {
+
+    
+  /* Page d'accueil */
+  #home {
+    width: 100%;
+    height: 105vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home_container{
+    width: 80%;
+    display: flex;
+    flex-direction:column;
+    height: 80%;
+  }
+
+  .home_left img {
+    width: 50%;
+  }
+
+  .home_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .home_right h2{
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.1vw;
+    color:var(--second_color, white);
+    text-transform: uppercase;
+    margin-left: 5px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .home_right h1{
+    text-align: center;
+  }
+
+  .home_right h3{
+    font-family: "Dela Gothic One", cursive, sans-serif;
+    letter-spacing: 0.1vw;
+    color:var(--second_color, white);
+    margin: 15px;
+    text-align: center;
+  }
+
+  .home_right a{
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  
+  #scroll_down {
+    cursor: pointer;
+    width: 125px;
+    height: 65px;
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%, -50%);
+  }
+
+  .skill_part_ctn {
+    margin: 2rem 2rem;
+  }
+
+
+}
