@@ -26,15 +26,65 @@
         }
 
         h1{
-            font-size: 6vw;
+            font-size: 3vw;
             text-transform: uppercase;
         }
-        img{
-            width: 10%;
+
+        h2{
+            font-size: 1.5rem;
+        }
+
+        #logo{
+            width: 20%;
+            margin-top: 200px;
+        }
+
+        .github{
+            padding: 5px 50px;
+            border: 2px solid white;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            gap: 10px;
+        }
+
+        .github img{
+            width: 32px;
+        }
+
+        .cv img{
+            width: 32px;
+        }
+
+        .cv{
+            padding: 5px 50px;
+            border: 2px solid white;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            gap: 10px;
+        }
+
+        span{
+            font-size: 30px;
         }
     </style>
-    <h1>🚧 Portfolio en travaux 🚧</h1>
-    <h2>⌛️ Il revient bientôt ⌛️</h2>
-    <img src="./nav_logo.png" alt="Roche Sébastien">
+    <h1>🚧 Nouveau portfolio en cours de développement 🚧</h1>
+    <h2>⌛️ En attendant, vous pouvez retrouver mes projets et mon CV ici : ⌛️</h2>
+    <a href="https://github.com/rochesebastien" class="github">
+        <img src="./github.svg" alt="">
+        <span>Mon github</span>
+    </a>
+    <a href="./CV.pdf" class="cv" target="_blank">
+        <img src="./article-line.svg" alt="">
+        <span>Télécharger mon CV</span>
+    </a>
+    <img id="logo" src="./nav_logo.png" alt="Roche Sébastien">
 </body>
 </html>
