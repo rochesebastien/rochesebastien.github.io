@@ -1,0 +1,103 @@
+.career{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 4rem 0px;
+
+    .career_ctn{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+
+        .actions_row{
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            gap: 1rem;
+            button{
+                padding: 1rem 3rem;
+                font-family: "Mona Sans";
+                font-size: var(--text_size);
+                border: 1px solid #eb5e28;
+                background: none;
+                color: #eb5e28;
+                transition: 0.2s ease-in-out;
+
+                &.active{
+                    color: black;
+                    background: #eb5e28;
+                }
+
+                &:hover {
+                    color: black;
+                    background: #eb5e28;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .career_list{
+            .career_item{
+                font-family: "Mona Sans";
+                border-left: 2px solid rgba(255, 255, 255, 0.286);
+                text-indent: 2rem;
+                padding: 1.5rem;
+                margin-bottom: 1.5rem;
+
+                .circle{
+                    position: relative;
+                    left: calc(-20px / 2 - 1.5rem);
+                    top: calc(-20px / 2 - 1.5rem);
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%; 
+                    background:white;
+                    animation: 2s pulse infinite linear;
+                }
+
+                h3{
+                    color: #eb5e28;
+                    font-size: calc(1.2 * var(--text_size));
+                    font-weight: bold;
+                }
+
+                .option{
+                    padding: 0.5rem 0px;
+                    font-size: var(--text_size);
+                }
+
+                .year{
+                    font-size: var(--text_size);
+                    font-weight: bold;
+                }
+
+                .location{
+                    padding: 0.3rem 0px;
+                    font-size: calc(0.7 * var(--text_size));
+                }
+
+                ul{
+                    padding: 0.5rem 0px;
+                    font-size: var(--text_size);
+                }
+            }
+        }
+    }
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.2);
+        background: #eb5e28;
+    }
+
+    100%{
+        transform: scale(1);
+        background: white;
+    }
+}
